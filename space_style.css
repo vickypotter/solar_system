@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+html,body
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #101010;
+}
+
+header
+{
+    position: relative;
+    top: -20px;
+    left: 0;
+    height: 100vh;
+    background-image: url('./assets/bg-earth.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #cccccc;
+    z-index: 0;
+}
+
+header h2
+{
+    font-family: 'Exo 2', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 35px;
+    padding: 5px;
+    margin: 10px 0 0 20px;
+    text-shadow: 13px 7px 6px black;
+    font-style: italic;
+}
+
+header h2 span
+{
+    color: #4874f9;
+}
+
+header .content
+{
+    margin-top: 20px;
+}
+header nav
+{
+    color: white;
+    margin-top: 20px;
+}
+
+header nav ul
+{
+    margin-right: 50px ;
+    float: right;
+}
+header nav ul li
+{
+    display: inline;
+    margin: 0 20px 0 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 1px;
+    
+}
+
+.explore
+{
+    /* background-color: red; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    justify-content: center;
+}
+
+.explore h1
+{
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: 2px;
+    padding: 10px;
+    font-size: 60px;
+    outline: none;
+    border: 5px solid #ffffff;
+    margin-top: 20%;
+    color: white;
+    text-shadow: 5px 4px 10px black
+}
+
+.explore p
+{
+    letter-spacing: 50px;
+    font-size: 20px;
+    font-weight: 800;
+    margin-left: 30px;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+}
+
+.main
+{
+    position: relative;
+    top: -20px;
+    background-image: url('./assets/astronaut.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding-top: 0;
+    /* filter: blur(1px); */
+    /* z-index: 1; */
+}
+
+.main .heading h1
+{
+    position: relative;
+    padding: 10px;
+    margin-bottom: 20px;
+    top: 10px;
+    font-family: 'Exo 2', sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+
+/* form .row .sun button
+{
+    height: 100px;
+    width: 100px;
+    background-image: url('./assets/sun.png');
+} */
+
+.planet-btn
+{
+    position: relative;
+    left: 0;
+}
+.col-1
+{
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+.col-1 img{
+    height: 100px;
+    width: 100px;
+}
+
+.saturn
+{
+    margin-right: 10px;
+}
+
+.saturn img
+{
+    height: 90px;
+    width: 150px;
+    margin-top: 0px;
+    position: relative;
+    left: -22px;
+}
+.col-1:hover
+{
+    box-shadow: 0 0 10px black;
+    background: transparent;
+    color: white;
+}
+
+.blank:hover
+{
+    box-shadow: none;
+}
+
+.col-1 a
+{
+    color: black;
+}
+.col-1 a label
+{
+    font-size: 18px;
+    margin-top: 10px;
+    /* color: black; */
+    font-style: italic;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: .5s ease-in;
+}
+
+.col-1 a:hover
+{
+    color:white;
+}
+
+#planet-img
+{
+    text-align: center;
+}
+
+#box
+{
+    display: none;
+    height: 350px;
+    width: 400px;
+    padding-left: 30px;
+    text-align: left;
+    color: white;
+    box-shadow: 0 0 20px black;
+    background: rgba(255, 255, 255, 0.24);
+}
+/* 
+#planet-show
+{
+    -webkit-animation: rotation 2s infinite linear;
+}
+@-webkit-keyframes rotation {
+    from {
+            -webkit-transform: rotate(0deg);
+    }
+    to {
+            -webkit-transform: rotate(359deg);
+    }
+} */
+
+#box h1
+{
+    font-family: 'Audiowide', cursive;
+    font-size: 40px;
+    color: white;
+    position: relative;
+    top: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0px 2px 6px black;
+    font-weight: 800;
+}
+
+#box p
+{
+    font-family: 'Orbitron', sans-serif;
+    color: black;
+    font-size: 20px;
+    margin-top: 10%;
+    font-weight: 500;
+    line-height: 45px;
+}
+
+.tag
+{
+    position: relative;
+    top: -5px;
+    color: white;
+    /* margin:2px 0 2px 0; */
+}
