@@ -1,0 +1,19 @@
+{
+  "name": "solar-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vickypotter/solar_system.git"
+  },
+  "author": "vicky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vickypotter/solar_system/issues"
+  },
+  "homepage": "https://github.com/vickypotter/solar_system#readme"
+}
