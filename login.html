@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">        
+        <input type="text" required id="user"> <br>
+        <input type="text" required id="mail"> <br>
+        <button onclick="validate()">Login</button>        
+    </div>
+    <script>
+        function validate()
+        {    
+            var re = /^[A-Za-z]+$/;
+            var username = document.getElementById("user");
+            var mail = document.getElementById("mail");
+            if(re.test(username.value))
+            {
+                if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail.value))
+                {
+                    alert('Login Processing...');
+                    redirect();
+                }
+                else
+                {
+                    alert("You have entered an invalid email address!")                    
+                }               
+            }                
+            else
+            {
+                alert('Invalid Name.'); 
+            }                     
+        }
+        function redirect() 
+        {
+            location.replace('https://vickypotter.github.io/solar_system/');
+        }
+    </script>
+</body>
+</html>
